@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <package name="struts2" namespace="/" extends="struts-default">
+        <!-- 配置拦截器 -->
+        <interceptors>
+        	<interceptor name="privilege" class="itcast.cn.interceptor.PrivilegeInterceptor"/>
+        	<interceptor-stack name="MyStack">
+        		<interceptor-ref name="defaultStack"/>
+        		<interceptor-ref name="privilege"/>
+        	</interceptor-stack>
+        </interceptors>
+        <!-- 用户登录操作 -->
+        <action name="login" class="cn.itcast.action.LoginAction">
+	        <result name="success">/main.jsp</result>
+          	<result name="input">/login.jsp</result>
+        </action>
+        <!-- 关于book操作 -->
+        <action name="book_*" class="cn.itcast.action.BookAction" method="{1}">
+        	<result name="success">/success.jsp</result>
+        	<result name="login">/login.jsp</result>
+        	<!-- 在action中使用自定义拦截器 -->
+        	<interceptor-ref name="MyStack"/>
+        </action>
+    </package>
+	
+</struts>

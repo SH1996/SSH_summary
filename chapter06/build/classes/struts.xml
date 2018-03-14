@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <!-- 设置文件上传允许的最大值为10MB -->
+    <constant name="struts.multipart.maxSize" value="10485760"></constant>
+    <package name="struts2" namespace="/" extends="struts-default">
+        <action name="fileupload" class="chapter06.FileUploadAction">
+        	<result name="success">/result.jsp</result>
+        	<result name="error">/error.jsp</result>
+	        <interceptor-ref name="defaultStack">
+	        	<!-- 限制文件上传值为4M -->
+	        	<param name="fileUpload.maximumSize">4194304</param>
+	        	<!-- 限制上传文件的扩展名 -->
+	        	<param name="fileUpload.allowedExtensions">
+	        		.txt,.doc,.jpg
+	        	</param>
+	        	<!-- 限制文件上传的类型 -->
+	        	<param name="fileUpload.allowedTypes">
+	        		text/plain,application/msword,image/jpeg
+	        	</param>
+	        </interceptor-ref>	 
+        </action>
+        <!-- 下载文件设置 -->
+        <action name="simpledownload" class="chapter06.SimpleDownLoadAction">
+        	<result type="stream">
+        		<!-- 文件类型 -->
+        		<param name="contentType">text/plain</param>
+        		<!-- 指定文件名 -->
+        		<param name="contentDisposition">
+        			attachment;filename="Struts2.txt"
+        		</param>
+        		<!-- 输入流 -->
+        		<param name="inputName">downloadFile</param>
+        	</result>
+        	
+        </action>
+        <action name="simpledownload2" class="chapter06.SimpleDownLoad2Action">
+        	<result type="stream">
+        		<!-- 文件类型 -->
+        		<param name="contentType">${contentType}</param>
+        		<!-- 指定文件 -->
+        		<param name="contentDisposition">attachment;filename=${filename}</param>
+        		<!-- 输入流 -->
+        		<param name="inputName"> downloadFile2</param>
+        		
+        	</result>
+        </action>
+    </package>
+	<!-- 忽略OGNL，struts2标签，值栈的设置 --> 
+</struts>

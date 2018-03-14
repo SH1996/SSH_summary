@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<!-- Struts2必须放在指定的包空间之下定义 -->
+    <package name="helloAA" namespace="/" extends="struts-default">
+		<!-- 指定Action，该Action对应的类为？？ -->	
+        <action name="helloWorld" class="cn.itcast.action.HelloWorldAction">
+            <result name="success">/success.jsp</result>
+        </action>
+    </package>
+	
+</struts>
