@@ -1,4 +1,4 @@
--[ ] hibernate.cfg.xml配置
+- [x] hibernate.cfg.xml配置
 
 ```
 <?xml version="1.0" encoding="GBK"?>
@@ -42,7 +42,7 @@
 </hibernate-configuration>
 ```
 
--[ ] hibernate.properties文件
+- [ ] hibernate.properties文件
 
 ```
 ## MySQL
@@ -131,7 +131,7 @@ hibernate.transaction.manager_lookup_class org.hibernate.transaction.OrionTransa
 hibernate.transaction.manager_lookup_class org.hibernate.transaction.ResinTransactionManagerLookup
 ```
 
--[ ] hibernate.hbm.xml配置
+- [x] hibernate.hbm.xml配置
 
 ```
 <?xml version="1.0"?>
