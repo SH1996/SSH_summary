@@ -1,4 +1,5 @@
 -[ ] hibernate.cfg.xml配置
+
 ```
 <?xml version="1.0" encoding="GBK"?>
 <!-- 指定Hibernate配置文件的DTD信息 -->
@@ -39,9 +40,10 @@
 		<mapping resource="映射文件路径/News.hbm.xml"/>
 	</session-factory>
 </hibernate-configuration>
-
 ```
+
 -[ ] hibernate.properties文件
+
 ```
 ## MySQL
 #方言
@@ -127,10 +129,10 @@ hibernate.transaction.manager_lookup_class org.hibernate.transaction.WeblogicTra
 hibernate.transaction.manager_lookup_class org.hibernate.transaction.WebSphereTransactionManagerLookup
 hibernate.transaction.manager_lookup_class org.hibernate.transaction.OrionTransactionManagerLookup
 hibernate.transaction.manager_lookup_class org.hibernate.transaction.ResinTransactionManagerLookup
-
 ```
 
 -[ ] hibernate.hbm.xml配置
+
 ```
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC 
