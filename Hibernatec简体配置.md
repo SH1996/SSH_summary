@@ -1,7 +1,7 @@
 - [x] hibernate.cfg.xml配置
 
 ```
-<?xml version="1.0" encoding="GBK"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- 指定Hibernate配置文件的DTD信息 -->
 <!DOCTYPE hibernate-configuration PUBLIC
 	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
