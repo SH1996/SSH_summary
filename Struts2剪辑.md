@@ -1,10 +1,11 @@
+
 Struts2介绍：
 ==========
 
 ### 1.struts2一些规范和简介：
 
 struts2是一个功能强大，简单易用，灵活🉐️支持用户的个性化，或自带的默认格式，使得发开更加随意，和开心，和很好的国际化和校验功能···
-struts2架框大多配置文件有默认的名称和路径，大半参数和信息可以通过struts2-core.jar打开查看，卸载的apps自带简单入门模版，
+struts2架框大多配置文件有默认的名称和路径，大半参数和信息可以通过struts2-core.jar打开查看，下载的apps自带简单入门模版，
 因为struts2内容简介明了，自带一套解决web技术的内置标签，个性配置，ognl导航语言，和一些列应用于web开发的技术（文件上传等），
 其核心是拦截器配置，用来处理很多action拦截，还有优良的值栈空间，可以通过debug查看与空间variables的数据；
 
@@ -26,3 +27,6 @@ struts2架框大多配置文件有默认的名称和路径，大半参数和信�
 
 
 
+- Struts2官网：[sruts](https:apache.org.struts)
+
+![动漫](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1522326939146&di=faac63ea8ee993563006692e1a640177&imgtype=0&src=http%3A%2F%2Fattach.bbs.miui.com%2Fforum%2F201708%2F02%2F162015g8shss8wbwb8w193.jpg)
