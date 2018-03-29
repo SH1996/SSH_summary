@@ -29,6 +29,8 @@ struts2架框大多配置文件有默认的名称和路径，大半参数和信�
 
 - Struts2官网：[sruts](http://struts.apache.org)
 
+- 学习官网：[yibai](https://www.yiibai.com/struts_2/)
+
 ![动漫](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1522326939146&di=faac63ea8ee993563006692e1a640177&imgtype=0&src=http%3A%2F%2Fattach.bbs.miui.com%2Fforum%2F201708%2F02%2F162015g8shss8wbwb8w193.jpg)
 
 
