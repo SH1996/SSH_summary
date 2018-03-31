@@ -1,57 +1,57 @@
 ls -a 
 git status
 git add .
-git commit -m "µÚÒ»´ÎÌá½»"
-git commit -a -m "Ò»´ÎĞÔÌá½»"
+git commit -m "ç¬¬ä¸€æ¬¡æäº¤"
+git commit -a -m "ä¸€æ¬¡æ€§æäº¤"
 git log
 git remote rm origin 
-git remote add origin ¸´ÖÆrepositoryµ½´Ë´¦
+git remote add origin å¤åˆ¶repositoryåˆ°æ­¤å¤„
 git pull origin master
 git pull --rebase origin master
 
 git config --list 
-git config --global user.name ÕËºÅ
-git config --global user.email "ÓÊÏä"
-git config --local user.name ÕËºÅ
-git config --local user.name "ÓÊÏä"
-git clone ¸´ÖÆrepositoryURLµ½´Ë´¦£¨Ë½ÈË²Ö¿âÔÚ@ºóÌí¼Óperson.£©
+git config --global user.name è´¦å·
+git config --global user.email "é‚®ç®±"
+git config --local user.name è´¦å·
+git config --local user.name "é‚®ç®±"
+git clone å¤åˆ¶repositoryURLåˆ°æ­¤å¤„ï¼ˆç§äººä»“åº“åœ¨@åæ·»åŠ person.ï¼‰
 git config --global core.autocrlf true
 
 
-git show ¸´ÖÆcommitÖ®ºóµÄ¹şÏ£Öµ
+git show å¤åˆ¶commitä¹‹åçš„å“ˆå¸Œå€¼
 git remote -v
 
-error£º
-´ò¿ªC:\Users\win\.sshÎÄ¼ş£¬É¾³ı
-´ò¿ªcmd-control-¹ÜÀíÆ¾Ö¤-windowÆ¾Ö¤£¬É¾³ı
-´ò¿ªgithub-settings-SSH£¬É¾³ı 
+errorï¼š
+æ‰“å¼€C:\Users\win\.sshæ–‡ä»¶ï¼Œåˆ é™¤
+æ‰“å¼€cmd-control-ç®¡ç†å‡­è¯-windowå‡­è¯ï¼Œåˆ é™¤
+æ‰“å¼€github-settings-SSHï¼Œåˆ é™¤ 
 
-Íâ¼Ólinux£º
+å¤–åŠ linuxï¼š
 cd .. 
 mkdir hello
 pwd 
 echo "hello"
 echo "hello" > a.txt
-vim a.txt ĞŞ¸Ä esc :wq ±£´æÍË³ö
+vim a.txt ä¿®æ”¹ esc :wq ä¿å­˜é€€å‡º
 mv a.txt ../a.txt
 mv a.txt b.txt
 rm a.txt
 cp ../README.md doc.md
 
-\ÊÓÒ»ĞĞ
-Îó²Ù×÷ÃüÁîĞĞÖÕ½áCtrl c
+\è§†ä¸€è¡Œ
+è¯¯æ“ä½œå‘½ä»¤è¡Œç»ˆç»“Ctrl c
 ls -l -a
 cd ~
 cat demo
 
-ÕæÕıÊ¹ÓÃgit½øĞĞ°æ±¾¿ØÖÆµÄ
+çœŸæ­£ä½¿ç”¨gitè¿›è¡Œç‰ˆæœ¬æ§åˆ¶çš„
 git clone https://github.com/SH1996/hello-github.git
-vim README.md  i  ĞŞ¸ÄµÄÄÚÈİ esc :wq
-git commit -a -m "½«¿ËÂ¡ÏÂÀ´µÄÎÄ¼şÉÏ´«"
-git push £¨²»ĞèÒªÖ¸¶¨origin ºÍ master£¬git remote -vÒÑ¾­¶ÔÓ¦Á¬½Ó£©
+vim README.md  i  ä¿®æ”¹çš„å†…å®¹ esc :wq
+git commit -a -m "å°†å…‹éš†ä¸‹æ¥çš„æ–‡ä»¶ä¸Šä¼ "
+git push origin masterï¼ˆä¸éœ€è¦æŒ‡å®šorigin å’Œ masterï¼Œgit remote -vå·²ç»å¯¹åº”è¿æ¥ï¼‰
 
-¼¯ÖĞ²Ö¿âgitµÄÊ¹ÓÃ½²½â£º
-1.¶à¸öÈËÍ¬Ê±Ê¹ÓÃÍ¬Ò»¸ö²Ö¿â£¬²é¿´historyºÍstatusÊÇ·Ç³£ÖØÒªµÄ
-2.Ã»ÓĞcommit¿ÉÒÔÊ¹ÓÃgit pull
-3.Ê¹ÓÃÁËcommit £¬ÒòÎª²»È·¶¨±ğÈËÒ²×öÁËĞŞ¸Ä£¬ËùÒÔÊ¹ÓÃgit pull --rebase
-4¡£²úÉúÍ¬Ò»¸öÎÄ¼şĞŞ¸ÄÉÏ´«³åÍ»¾ÍvimÖĞÉ¾³ı³åÍ»µÄÏß
+é›†ä¸­ä»“åº“gitçš„ä½¿ç”¨è®²è§£ï¼š
+1.å¤šä¸ªäººåŒæ—¶ä½¿ç”¨åŒä¸€ä¸ªä»“åº“ï¼ŒæŸ¥çœ‹historyå’Œstatusæ˜¯éå¸¸é‡è¦çš„
+2.æ²¡æœ‰commitå¯ä»¥ä½¿ç”¨git pull
+3.ä½¿ç”¨äº†commit ï¼Œå› ä¸ºä¸ç¡®å®šåˆ«äººä¹Ÿåšäº†ä¿®æ”¹ï¼Œæ‰€ä»¥ä½¿ç”¨git pull --rebase
+4ã€‚äº§ç”ŸåŒä¸€ä¸ªæ–‡ä»¶ä¿®æ”¹ä¸Šä¼ å†²çªå°±vimä¸­åˆ é™¤å†²çªçš„çº¿
