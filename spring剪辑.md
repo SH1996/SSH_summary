@@ -60,6 +60,14 @@ spring(纯)
       
 ## 5.AOP
 
-
+      a.导入AspectJ架包，和springAOP架包
+      b.applicationContent中声明AOP
+      c.在代理切面累中声明Component和Aspect注解，还有@before等需注解（
+      此注解中使用语法为：public void 权限定名.方法名（参数）当然在切面多个对象的处理是使用*号表示通配；）
+      
       
-  
+      
+      
+      
+      
+      
