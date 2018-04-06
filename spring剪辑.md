@@ -57,14 +57,16 @@ spring(纯)
       a.singleton
       b.property 调用bean时实例化，不被容器管理生命周期
       
+      
+### 5.AOP
       
-## 5.AOP
-
-      a.导入AspectJ架包，和springAOP架包
-      b.applicationContent中声明AOP
+  1).简介：        
+   
+      a.导入AspectJ架包，和springAOP架包 
+      b.applicationContent中声明AOP 
       c.在代理切面累中声明Component和Aspect注解，还有@before等需注解（
-      此注解中使用语法为：public void 权限定名.方法名（参数）当然在切面多个对象的处理是使用*号表示通配；）
-      d.aop切面方法有传一个连接点和切面点，joinpoint ，可以获取切面方法的名和参数，另一个大同小异
+      此注解中使用语法为：public void 权限定名.方法名（参数）当然在切面多个对象的处理是使用*号表示通配；） 
+      d.aop切面方法有传一个连接点和切面点，joinpoint ，可以获取切面方法的名和参数，另一个大同小异
       
       
       
